@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="style.css">
   </head>
 <body>
+  <!----!-->
+  <div id="wadah-bulat" class="wadah-bulat">
+    <i class="bulat"></i>
+  </div>
+
   <!-- container / caards-->
   <div class="container">
     <img src="./images/image-qr-code.png" alt="QR-Code">
@@ -20,14 +25,26 @@
     </p>
   </div>
 
+  <!-- container / caards -->
 
-Challenge by
+  <div class="attribution">
+    Challenge by
+    <a href="#">
+      Frontend Mentor
+    </a>.
+    Coded by
+    <a href="#">
+      Your Name Here
+    </a>
+  </div>
 
-Frontend Mentor
-.
-Coded by
-
-Your Name Here
-
+<script>
+  const body = document.querySelector('body');
+  const wadah = document.getElementById('wadah-bulat');
+  wadah.onclick = function () {
+   wadah.classList.toggle('active'); 
+   body.classList.toggle('active');
+  };
+</script>
 </body>
 </html>
